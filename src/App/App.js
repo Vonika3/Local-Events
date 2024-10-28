@@ -19,8 +19,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/rooms/" component={Room} />
-        <Route exact path="/rooms/:slug" component={SingleRoom} />
+        <Route exact path="/events/" component={Room} />
+        <Route exact path="/events/:slug" component={SingleRoom} />
         <Route component={Error} />
       </Switch>
       <Footer />

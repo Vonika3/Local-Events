@@ -22,7 +22,7 @@ export default function Room({ room }) {
           <p>per event</p>
         </div>
 
-        <Link to={`/rooms/${slug}`} className="btn-primary room-link">
+        <Link to={`/events/${slug}`} className="btn-primary room-link">
           Details
         </Link>
       </div>

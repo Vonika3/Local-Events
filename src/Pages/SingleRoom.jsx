@@ -30,9 +30,9 @@ export default class SingleRoom extends Component {
     if (!room) {
       return (
         <div className="error">
-          <h3>no such room could be found!</h3>
-          <Link to="/rooms" className="btn-primary">
-            back to rooms
+          <h3>no such events could be found!</h3>
+          <Link to="/events" className="btn-primary">
+            back to events
           </Link>
         </div>
       );
@@ -56,8 +56,8 @@ export default class SingleRoom extends Component {
       <>
         <StyledHero img={mainImg || this.state.defaultBcg}>
           <Banner title={`${name} event`}>
-            <Link to="/rooms" className="btn-primary">
-              back to rooms
+            <Link to="/" className="btn-primary">
+              back to home
             </Link>
           </Banner>
         </StyledHero>

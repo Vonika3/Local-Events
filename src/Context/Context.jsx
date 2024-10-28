@@ -44,6 +44,7 @@ class RoomProvider extends Component {
   }
 
   formatDate(items) {
+    // console.log(items)
     let tempItems = items.map((item) => {
       let id = item.sys.id;
       let images = item.fields.images.map((image) => image.fields.file.url);
@@ -71,7 +72,6 @@ class RoomProvider extends Component {
     const target = event.target;
     const value = target.type === "checkbox" ? target.checked : target.value;
     const name = event.target.name;
-    console.log(target, value, name);
 
     this.setState(
       {
@@ -84,49 +84,22 @@ class RoomProvider extends Component {
   filterRooms = () => {
     let {
       rooms,
-      type,
-      capacity,
+      // capacity,
       price,
-      minSize,
-      maxSize,
-      breakfast,
-      pets,
     } = this.state;
 
     // all the room
     let tempRooms = [...rooms];
+    // console.log(tempRooms)
 
     // transform value
-    capacity = parseInt(capacity);
+    // capacity = parseInt(capacity);
     price = parseInt(price);
-
-    // filter by type
-    if (type !== "all") {
-      tempRooms = tempRooms.filter((room) => room.type === type);
-    }
-
-    // filter by capacity
-    if (capacity !== 1) {
-      tempRooms = tempRooms.filter((room) => room.capacity >= capacity);
-    }
+    // console.log(price);
 
     // filter by price
     tempRooms = tempRooms.filter((room) => room.price <= price);
-
-    // filter bt size
-    tempRooms = tempRooms.filter(
-      (room) => room.size >= minSize && room.size <= maxSize
-    );
-
-    // filter by breakfast
-    if (breakfast) {
-      tempRooms = tempRooms.filter((room) => room.breakfast === true);
-    }
-
-    // filter by pets
-    if (pets) {
-      tempRooms = tempRooms.filter((room) => room.pets === true);
-    }
+    // console.log(tempRooms)
 
     // change state
     this.setState({

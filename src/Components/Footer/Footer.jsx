@@ -7,12 +7,12 @@ export default function Footer() {
     <footer className="footer">
       <h2>Near & Now| Upcoming Events</h2>
       <p>
-        &copy; <span>{year}</span> LocalEvent.com - All Rights Copyright  
+        &copy; <span>{year}</span> EventSpot.com - All Rights Copyright  
         Reserved To{" "}
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://www.facebook.com/SamiurRahmanMukul"
+          href="/"
         >
           Vonika
         </a>

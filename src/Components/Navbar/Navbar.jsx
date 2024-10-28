@@ -22,7 +22,7 @@ export default class Navbar extends Component {
           <div className="nav-header">
             {/* app logo */}
             <Link to="/">
-              <img src={Logo} alt="Reach Resort" />
+              <img src={Logo} alt="Event Spot" width={200} />
             </Link>
 
             {/* navbar toggle button */}
@@ -42,7 +42,7 @@ export default class Navbar extends Component {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/rooms">Events</Link>
+              <Link to="/events">Events</Link>
             </li>
           </ul>
         </div>
