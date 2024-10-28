@@ -20,8 +20,8 @@ To get started with EventSpot on your local machine, follow these steps:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/eventspot.git
-   cd eventspot
+   git clone https://github.com/Vonika3/Local-Events.git
+   cd Local-Events
    ```
 
 2. **Install Dependencies:**
@@ -52,7 +52,6 @@ To get started with EventSpot on your local machine, follow these steps:
 - **React Router**: For routing between pages.
 - **Styled Components**: For styling React components.
 - **React Icons**: For adding icons to the UI.
-- **React Image Carousel**: For carousel functionality in event highlights.
 
 ---
 
@@ -61,7 +60,6 @@ To get started with EventSpot on your local machine, follow these steps:
 - `@testing-library/jest-dom`, `@testing-library/react`, `@testing-library/user-event`: Testing utilities.
 - `postcss` and `postcss-safe-parser`: Post-processing CSS.
 - `react-icons`: Icon library.
-- `react-image-carousel`: Carousel for event highlights.
 - `react-router-dom`: Client-side routing.
 - `styled-components`: For styled components in React.
 
